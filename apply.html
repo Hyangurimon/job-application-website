@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lorem Ipsum Careers</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <a href="./index.html">
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span>Lorem Ipsum</span>
+              <span>CAREERS</span>
+            </div>
+          </div>
+        </a>
+        <div class="nav-bar">
+          <nav>
+            <a href="">Home</a>
+            <a href="">Header Link One</a>
+            <a href="">Header Link Two</a>
+            <div class="languages">
+              <button class="dropbtn">
+                <span><i class="fas fa-chevron-down"></i></span>
+                English
+              </button>
+              <div class="dropdown-content">
+                <a href="">French</a>
+                <a href="">Spanish</a>
+              </div>
+            </div>
+            <button class="search-btn" id="header-search-btn">
+              <span><i class="fas fa-search fa-flip-horizontal"></i></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="title-wrapper">
+        <div class="title">Submit Job Application</div>
+      </div>
+      <div class="main-content-wrapper">
+        <div class="current-step-indicator">
+          <div>
+            <div class="step-1 active"><span>1</span>Legal Notice</div>
+            <div class="step-2"><span>2</span>User Verification</div>
+            <div class="step-3"><span>3</span>Job Application</div>
+          </div>
+        </div>
+        <form>
+          <div class="step-1-main-content">
+            <div class="heading">Legal Notice</div>
+            <div class="content">
+              Duis a neque vitae lacus porttitor luctus. Sed facilisis eros non
+              odio ultrices, id pharetra lorem pellentesque. Ut vel orci eu
+              sapien molestie mattis at nec risus. Sed placerat vel est ac
+              ullamcorper. Pellentesque dignissim venenatis sapien, quis posuere
+              diam fringilla ac. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus. Mauris non dignissim ipsum. Proin auctor vel
+              massa at iaculis. Curabitur tempor ex nisl, non lacinia erat
+              dapibus ac. Donec vitae ante justo. Sed cursus aliquet venenatis.
+              Nunc consequat enim lacinia, placerat purus vel, suscipit libero.
+              Morbi a ultricies lorem. Quisque pulvinar nunc non justo lacinia,
+              sodales tempus dolor fringilla.
+            </div>
+            <div class="buttons-container">
+              <button class="primary-btn" id="legal-notice-agree-btn">
+                Yes, I Agree
+              </button>
+              <button class="transparent-btn cancel-btn">Cancel</button>
+            </div>
+          </div>
+          <div class="step-2-main-content hidden">
+            <div class="notice">
+              <div><i class="fas fa-info"></i></div>
+              <div>
+                <p>
+                  In order to complete our electronic application, a resume &
+                  cover letter is required.
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="instructions">Please enter your Email Address.</div>
+              <div class="input-field">
+                <div class="wrapper">
+                  <label for="email">EMAIL ADDRESS</label>
+                  <div class="icon"><i class="fas fa-question"></i></div>
+                </div>
+                <input type="text" id="email" autocomplete="off" />
+              </div>
+              <div class="input-field">
+                <label for="confirm-email">CONFIRM EMAIL ADDRESS</label>
+                <input type="text" id="confirm-email" autocomplete="off" />
+              </div>
+              <div class="buttons-container">
+                <button class="primary-btn" id="submit-email-btn">
+                  Submit
+                </button>
+                <button class="transparent-btn cancel-btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="step-3-main-content hidden">
+            <div class="content">
+              <div class="left-panel-wrapper">
+                <div class="left-panel">
+                  <div class="heading">Manual Entry</div>
+                  <div class="instructions">
+                    Select this option if you’d like to start entering
+                    application information manually.
+                  </div>
+                  <div class="buttons-container">
+                    <button class="primary-btn" id="manual-entry-btn">
+                      Manual Entry
+                    </button>
+                    <button class="transparent-btn cancel-btn">Cancel</button>
+                  </div>
+                </div>
+              </div>
+              <div class="right-panel-wrapper">
+                <div class="right-panel">
+                  <div class="heading">Upload Existing Resume</div>
+                  <div class="instructions">
+                    Select this option if you’d like to upload your resume in
+                    order to extract application information automatically.
+                    <br />
+                    <br />
+                    You will be able to verify the collected information before
+                    submitting your application.
+                  </div>
+                  <div>
+                    <span>RESUME</span>
+                    <span>maximum file size 4MB</span>
+                  </div>
+                  <div>
+                    <button class="browse-btn" id="browse-btn">
+                      Browse...
+                    </button>
+                    <span>No file selected</span>
+                  </div>
+                  <div class="buttons-container">
+                    <button class="primary-btn" id="upload-btn">Upload</button>
+                    <button class="transparent-btn cancel-btn">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-4-main-content hidden">
+            <div class="content">
+              <div class="inner-content position-applying">
+                <div class="heading">POSITION APPLYING FOR</div>
+                <div class="inner-content-box">
+                  <div>
+                    <div class="title">Job Title Goes Here</div>
+                    <div class="text">
+                      A brief explanation about the job comes here.
+                    </div>
+                  </div>
+                  <div class="buttons-container">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                    <button><i class="far fa-trash-alt"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-content applicant-info">
+                <div class="sticky">
+                  <div class="status-info white-text">
+                    Status information goes here
+                  </div>
+                  <div class="edit">
+                    <button class="white-text">Edit</button>
+                    <i class="fa-regular fa-pencil"></i>
+                  </div>
+                </div>
+                <div class="heading">APPLICANT INFORMATION</div>
+                <div class="inner-content-box">
+                  <div class="top-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SALUTATION</div>
+                      <div class="aspect-fill">Mr.</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">FIRST NAME</div>
+                      <div class="aspect-fill">James</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">MIDDLE INITIAL</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-4">
+                      <div class="aspect-title">LAST NAME</div>
+                      <div class="aspect-fill">Cameron</div>
+                    </div>
+                  </div>
+                  <div class="bottom-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SUFFIX</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">PREFERRED NAME</div>
+                      <div class="aspect-fill">Jim</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">EMAIL ADDRESS</div>
+                      <div class="aspect-fill">j.cameron@gmail.com</div>
+                    </div>
+                    <div class="aspect-4">
+                      <div class="aspect-title">CITIZENSHIP</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-content contact-info">
+                <div class="sticky">
+                  <div class="status-info white-text">
+                    Status information goes here
+                  </div>
+                  <div class="edit">
+                    <button class="white-text">Edit</button>
+                    <i class="fa-regular fa-pencil"></i>
+                  </div>
+                </div>
+                <div class="heading">CONTACT INFROMATION</div>
+                <div class="inner-content-box">
+                  <div class="top-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SALUTATION</div>
+                      <div class="aspect-fill">Mr.</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">FIRST NAME</div>
+                      <div class="aspect-fill">James</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">MIDDLE INITIAL</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-4">
+                      <div class="aspect-title">LAST NAME</div>
+                      <div class="aspect-fill">Cameron</div>
+                    </div>
+                  </div>
+                  <div class="middle-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SUFFIX</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">PREFERRED NAME</div>
+                      <div class="aspect-fill">Jim</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">ANOTHER FIELD</div>
+                      <div class="aspect-fill">
+                        Pellentesque dignissim venenatis
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-level-container other-field">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SOME OTHER FIELD</div>
+                      <div class="aspect-fill">
+                        Duis a neque vitae lacus porttitor luctus. Sed facilisis
+                        eros non odio ultrices, id pharetra lorem pellentesque.
+                        Ut vel orci eu sapien molestie mattis at nec risus. Sed
+                        placerat vel est ac ullamcorper.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-content other-section">
+                <div class="sticky">
+                  <div class="status-info white-text">
+                    Status information goes here
+                  </div>
+                  <div class="edit">
+                    <button class="white-text">Edit</button>
+                    <i class="fa-regular fa-pencil"></i>
+                  </div>
+                </div>
+                <div class="heading">SOME OTHER SECTION</div>
+                <div class="inner-content-box">
+                  <div class="top-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SALUTATION</div>
+                      <div class="aspect-fill">Mr.</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">FIRST NAME</div>
+                      <div class="aspect-fill">James</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">MIDDLE INITIAL</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-4">
+                      <div class="aspect-title">LAST NAME</div>
+                      <div class="aspect-fill">Cameron</div>
+                    </div>
+                  </div>
+                  <div class="middle-level-container">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SUFFIX</div>
+                      <div class="aspect-fill">---</div>
+                    </div>
+                    <div class="aspect-2">
+                      <div class="aspect-title">PREFERRED NAME</div>
+                      <div class="aspect-fill">Jim</div>
+                    </div>
+                    <div class="aspect-3">
+                      <div class="aspect-title">ANOTHER FIELD</div>
+                      <div class="aspect-fill">
+                        Pellentesque dignissim venenatis
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-level-container other-field">
+                    <div class="aspect-1">
+                      <div class="aspect-title">SOME OTHER FIELD</div>
+                      <div class="aspect-fill">
+                        Duis a neque vitae lacus porttitor luctus. Sed facilisis
+                        eros non odio ultrices, id pharetra lorem pellentesque.
+                        Ut vel orci eu sapien molestie mattis at nec risus. Sed
+                        placerat vel est ac ullamcorper.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons-container">
+              <button
+                type="submit"
+                class="pill-btn"
+                id="submit-application-btn"
+              >
+                <i class="far fa-paper-plane"></i>
+                Submit Application
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <span>© 2022 - Lorem Ipsum - All Rights Reserved</span>
+        <span>Footer Link One</span>
+        <span>Footer Link Two</span>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

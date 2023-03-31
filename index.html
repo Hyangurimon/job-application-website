@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lorem Ipsum Careers</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/a1aeea890e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <a href="./index.html">
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span>Lorem Ipsum</span>
+              <span>CAREERS</span>
+            </div>
+          </div>
+        </a>
+        <div class="nav-bar">
+          <nav>
+            <a href="">Home</a>
+            <a href="">Header Link One</a>
+            <a href="">Header Link Two</a>
+            <div class="languages">
+              <button class="dropbtn">
+                <span><i class="fas fa-chevron-down"></i></span>
+                English
+              </button>
+              <div class="dropdown-content">
+                <a href="">French</a>
+                <a href="">Spanish</a>
+              </div>
+            </div>
+            <button class="search-btn" id="header-search-btn">
+              <span><i class="fas fa-search fa-flip-horizontal"></i></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="hero-bg">
+        <div class="heading">This is where your career begins...</div>
+        <div class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          dapibus ante massa, eu cursus risus finibus quis. Nullam a pharetra
+          metus. Donec sit amet porttitor est, non condimentum augue. Maecenas
+          vitae mi tincidunt, dapibus elit eget, placerat nisi. Donec suscipit
+          placerat nunc finibus efficitur.
+        </div>
+      </div>
+      <div class="search-bar-wrapper">
+        <div class="input-wrapper">
+          <div class="input-position-wrapper">
+            <div><i class="fas fa-search"></i></div>
+            <input type="text" placeholder="Search all available positions" />
+            <button class="filter-btn-wrapper" id="filter-default-btn">
+              <i class="fas fa-sliders-h"></i>
+              <div class="filter">FILTER</div>
+            </button>
+            <button class="filter-btn-wrapper hidden" id="filter-close-btn">
+              <!-- <i class="far fa-times"></i> -->
+              <i class="fa-solid fa-xmark"></i>
+              <div class="filter">CLOSE</div>
+            </button>
+          </div>
+        </div>
+        <div class="filter-bar-wrapper">
+          <div class="filter-bar-position-wrapper">
+            <div class="filter-criteria">
+              <span class="title">LOCATION</span>
+              <input type="text" />
+            </div>
+            <div class="filter-criteria">
+              <span class="title">JOB CATEGORY</span>
+              <input type="text" />
+            </div>
+            <div class="btn-position">
+              <button class="secondary-btn" id="apply-filter-btn">
+                APPLY FILTER
+              </button>
+            </div>
+            <div class="btn-position">
+              <button class="transparent-btn reset-btn">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content-wrapper">
+        <div class="heading">
+          <div class="left-container">
+            <div class="title">Available Positions</div>
+            <div class="num-of-positions-wrapper">
+              <div class="num-of-positions"></div>
+            </div>
+          </div>
+          <div class="right-container">
+            <button id="simple-layout"><i class="fas fa-th"></i></button>
+            <button id="detailed-layout" class="active">
+              <i class="fas fa-th-large"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main-content" id="main-content"></div>
+      </div>
+      <div class="footer">
+        <span>© 2022 - Lorem Ipsum - All Rights Reserved</span>
+        <span><a href="">Footer Link One</a></span>
+        <span><a href="">Footer Link Two</a></span>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+.hero-bg {
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100vw;
+  color: #fff;
+  > * {
+    padding-left: 60px;
+    padding-right: 50%;
+  }
+  .heading {
+    font-family: $merriweather;
+    font-size: 34px;
+    padding-top: 150px;
+  }
+  .paragraph {
+    font-family: $roboto;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 18px;
+    opacity: 0.8;
+  }
+}
+
+.search-bar-wrapper {
+  // If sticky with opacity, context from behind is shown
+  // position: sticky;
+  // top: 0;
+  background-color: #111111;
+  width: 100vw;
+  .input-wrapper {
+    padding: 12px 0;
+    .input-position-wrapper {
+      display: flex;
+      width: 60vw;
+      margin: 0 auto;
+      > div:first-child {
+        background-color: transparent;
+        > i {
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 24px 0 0 24px;
+          padding: 14px;
+          font-size: 20px;
+          color: #ffffff;
+          height: 20px;
+        }
+      }
+      input {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 0 24px 24px 0;
+        padding: 14px 0 10px 0;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        height: 24px;
+      }
+      input::placeholder {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      input:focus {
+        outline: none;
+      }
+      .filter-btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: transparent;
+        margin-left: 16px;
+        > i {
+          font-size: 20px;
+        }
+        .filter {
+          padding-top: 4px;
+          font-weight: 300;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .filter-bar-wrapper {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    background-color: #333333;
+    color: white;
+    transition: all 0.2s;
+    .filter-bar-position-wrapper {
+      display: flex;
+      width: 60vw;
+      margin: 0 auto;
+      > * {
+        padding-right: 10px;
+      }
+      .filter-criteria {
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 11px;
+          letter-spacing: 1.15px;
+          opacity: 0.75;
+        }
+        input {
+          margin-top: 8px;
+          padding: 0 8px;
+          width: 200px;
+          height: 34px;
+          border-radius: 5px;
+          font-size: 16px;
+          border: none;
+        }
+        input:focus {
+          outline: none;
+        }
+      }
+      .btn-position {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        button {
+          height: 34px;
+          padding: 0 18px;
+          color: #ffffff;
+        }
+        #apply-filter-btn {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+
+.filter-bar-wrapper.open-filter-bar {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  padding: 20px 0;
+  transition: all 0.2s;
+}
+
+.main-content-wrapper {
+  width: 60vw;
+  margin: auto;
+  > .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 6px;
+    .left-container {
+      display: flex;
+      font-weight: bold;
+      .title {
+        font-size: 26px;
+        padding-right: 12px;
+      }
+      .num-of-positions-wrapper {
+        background-color: #3a19bd;
+        color: #ffffff;
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 32px;
+        text-align: center;
+
+        > div {
+          vertical-align: middle;
+          line-height: normal;
+          display: inline-block;
+        }
+      }
+    }
+    .right-container {
+      button {
+        background-color: transparent;
+        font-size: 22px;
+        color: #d7d7d7;
+        padding: 0 2px;
+      }
+      .active {
+        color: #3a19bd;
+      }
+    }
+  }
+  .main-content {
+    margin-top: 18px;
+    margin-bottom: 8vh;
+    > div {
+      display: flex;
+      border: 1px solid #ececec;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      .job-content {
+        padding: 20px;
+        .title {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        .specifics {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 12px 0;
+          .specificsAspect {
+            padding-right: 10px;
+            > span {
+              padding-right: 6px;
+            }
+            .specificsTitle {
+              font-family: $roboto-condensed;
+              font-weight: bold;
+              font-size: 11px;
+              letter-spacing: 1px;
+              color: #333333;
+              opacity: 0.3;
+            }
+            .specificsContent {
+              font-size: 14px;
+            }
+          }
+        }
+        .specifics.hideEl {
+          display: none;
+        }
+        .details {
+          font-size: 14px;
+          opacity: 0.8;
+        }
+      }
+      .arrow-btn-container {
+        display: flex;
+        background-color: #dbdbdb;
+        opacity: 0.4;
+        width: 65px;
+        border-radius: 0 5px 5px 0;
+        justify-content: center;
+        align-items: center;
+        .arrow-btn {
+          background-color: transparent;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    > div:last-child {
+      margin-bottom: 0;
+    }
+    // > div:nth-child(odd) {
+    // }
+    > div:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+  }
+  .main-content.change-style {
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    > div {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px dashed #979797;
+      background-color: transparent;
+      margin-bottom: 0;
+      .job-content {
+        .title {
+          font-size: 16px;
+        }
+        .specifics {
+          display: none;
+        }
+        .details {
+          padding-top: 5px;
+        }
+      }
+      .arrow-btn-container {
+        border-radius: 0;
+      }
+    }
+    > div:last-child {
+      border: none;
+    }
+  }
+}
